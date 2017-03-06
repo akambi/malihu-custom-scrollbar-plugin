@@ -1104,6 +1104,7 @@ and dependencies (minified).
 				/* clear and delete timeouts/objects */
 				clearTimeout($this[0]._focusTimeout); _delete($this[0],"_focusTimeout");
 				clearTimeout(d.sequential.step); _delete(d.sequential,"step");
+				if (!mCSB_container.length) { return; }
 				clearTimeout(mCSB_container[0].onCompleteTimeout); _delete(mCSB_container[0],"onCompleteTimeout");
 				d.bindEvents=false;
 			}
